@@ -1,5 +1,6 @@
 ﻿using CalifornianHealthMonolithic.Code;
 using CalifornianHealthMonolithic.Models;
+using CalifornianHealthMonolithic.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;

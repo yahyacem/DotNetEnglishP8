@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CalifornianHealthMonolithic.Shared;
+using Microsoft.EntityFrameworkCore;
 
 namespace CalifornianHealthMonolithic.API.Data
 {

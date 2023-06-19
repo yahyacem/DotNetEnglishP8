@@ -1,4 +1,6 @@
-﻿namespace CalifornianHealthMonolithic.API.Data.Repositories
+﻿using CalifornianHealthMonolithic.Shared;
+
+namespace CalifornianHealthMonolithic.API.Data.Repositories
 {
     public class Repository
     {

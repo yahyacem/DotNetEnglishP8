@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalifornianHealthMonolithic.Shared;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;

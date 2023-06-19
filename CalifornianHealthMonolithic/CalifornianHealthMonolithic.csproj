@@ -126,13 +126,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appointment.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Code\Repository.cs" />
-    <Compile Include="Consultant.cs" />
-    <Compile Include="ConsultantCalendar.cs" />
     <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Models\BookingModel.cs" />
     <Compile Include="Models\AvailableCalendarDates.cs" />
@@ -143,7 +140,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Patient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
