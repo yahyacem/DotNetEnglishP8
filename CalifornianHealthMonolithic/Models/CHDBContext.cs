@@ -15,6 +15,5 @@ namespace CalifornianHealthMonolithic.Models
         public DbSet<ConsultantCalendar> consultantCalendars { get; set; }
 
         public DbSet<Patient> patients { get; set; }
-
     }
 }
