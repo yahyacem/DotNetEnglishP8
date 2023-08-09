@@ -1,0 +1,14 @@
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/bin/Debug/net7.0/CalifornianHealthMonolithic.Shared.deps.json
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/bin/Debug/net7.0/CalifornianHealthMonolithic.Shared.dll
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/bin/Debug/net7.0/CalifornianHealthMonolithic.Shared.pdb
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.csproj.AssemblyReference.cache
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.AssemblyInfoInputs.cache
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.AssemblyInfo.cs
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.csproj.CoreCompileInputs.cache
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.dll
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/refint/CalifornianHealthMonolithic.Shared.dll
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.pdb
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/ref/CalifornianHealthMonolithic.Shared.dll
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/bin/Debug/net7.0/CalifornianHealthMonolithic.Shared.runtimeconfig.json
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Shared/obj/Debug/net7.0/CalifornianHealthMonolithic.Shared.genruntimeconfig.cache

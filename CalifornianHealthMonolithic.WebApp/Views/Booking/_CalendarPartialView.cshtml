@@ -1,0 +1,50 @@
+@model CalifornianHealthMonolithic.WebApp.Models.ViewModels.ConsultantCalendarListViewModel
+
+<script type="text/javascript">
+    function CreateCalendar(){
+        let modelDates = [];
+
+        @if (Model != null)
+        {
+            @:modelDates = @Html.Raw(Json.Serialize(@Model.ListConsultantsCalendar));
+        }
+        let calendarEvents = [];
+        modelDates.forEach((item, index) => {
+            calendarEvents.push({
+                id: item.id, // Event's id (required, for removing event)
+                name: "Available slot",
+                date: new Date(item.date), // Date of event
+                type: 'event', // Type of event (event|holiday|birthday)
+                color: '#63d867', // Event custom color (optional)
+                everyYear: false // Event is every year (optional)
+            });
+        });
+
+        console.log(calendarEvents);
+        console.log(@Html.Raw(Json.Serialize(@Model.ListConsultantsCalendar)));
+
+        $('#calendar').evoCalendar({
+                language: "en",
+                format: "dd/MM/yyyy",
+                firstDayOfWeek: 1,
+                sidebarDisplayDefault: true,
+                sidebarToggler: false,
+                eventDisplayDefault: false,
+                eventListToggler: false,
+                calendarEvents: calendarEvents
+        })
+        $('#calendar').on('selectDate', function(event, newDate, oldDate) {
+            let idSelected = null;
+            if (event.currentTarget.evoCalendar.$active.events.length > 0)
+            {
+                idSelected = event.currentTarget.evoCalendar.$active.events[0].id;
+                window.location.href = "/Booking/CreateAppointment/" + idSelected;
+            }
+        });
+    }
+</script>
+<div id="calendar"></div>
+<script type="text/javascript">
+    CreateCalendar();
+</script>
+

@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalifornianHealthMonolithic", "CalifornianHealthMonolithic\CalifornianHealthMonolithic.csproj", "{5FD042A3-4E83-4972-B98A-48CC6157F165}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalifornianHealthMonolithic.WebApp", "CalifornianHealthMonolithic.WebApp\CalifornianHealthMonolithic.WebApp.csproj", "{D7DA63F1-8B0F-49C3-B10D-455CF00C1956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalifornianHealthMonolithic.API", "CalifornianHealthMonolithic.API\CalifornianHealthMonolithic.API.csproj", "{C44F6EF5-424F-4C75-93B2-C3E6B9D07FBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalifornianHealthMonolithic.Shared", "CalifornianHealthMonolithic.Shared\CalifornianHealthMonolithic.Shared.csproj", "{D009FC7D-CBEA-432C-840E-D84DDED46DA6}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CalifornianHealthMonolithic.Shared", "CalifornianHealthMonolithic.Shared\CalifornianHealthMonolithic.Shared.shproj", "{E1D7B64D-24F3-4741-A98F-9EAFE046624E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalifornianHealthMonolithic.APIBooking", "CalifornianHealthMonolithic.APIBooking\CalifornianHealthMonolithic.APIBooking.csproj", "{0444F958-51FC-4C8F-BC37-BEBDF98DD32E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalifornianHealthMonolithic.Data", "CalifornianHealthMonolithic.Data\CalifornianHealthMonolithic.Data.csproj", "{2EB58476-E283-436E-986C-7FA30FBEFE94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalifornianHealthMonolithic.APIConsultant", "CalifornianHealthMonolithic.APIConsultant\CalifornianHealthMonolithic.APIConsultant.csproj", "{4DEAACDF-38B0-4072-96FD-56732D9465A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5FD042A3-4E83-4972-B98A-48CC6157F165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FD042A3-4E83-4972-B98A-48CC6157F165}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5FD042A3-4E83-4972-B98A-48CC6157F165}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5FD042A3-4E83-4972-B98A-48CC6157F165}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C44F6EF5-424F-4C75-93B2-C3E6B9D07FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C44F6EF5-424F-4C75-93B2-C3E6B9D07FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C44F6EF5-424F-4C75-93B2-C3E6B9D07FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C44F6EF5-424F-4C75-93B2-C3E6B9D07FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7DA63F1-8B0F-49C3-B10D-455CF00C1956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7DA63F1-8B0F-49C3-B10D-455CF00C1956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7DA63F1-8B0F-49C3-B10D-455CF00C1956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7DA63F1-8B0F-49C3-B10D-455CF00C1956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D009FC7D-CBEA-432C-840E-D84DDED46DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D009FC7D-CBEA-432C-840E-D84DDED46DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D009FC7D-CBEA-432C-840E-D84DDED46DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D009FC7D-CBEA-432C-840E-D84DDED46DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0444F958-51FC-4C8F-BC37-BEBDF98DD32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0444F958-51FC-4C8F-BC37-BEBDF98DD32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0444F958-51FC-4C8F-BC37-BEBDF98DD32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0444F958-51FC-4C8F-BC37-BEBDF98DD32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB58476-E283-436E-986C-7FA30FBEFE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB58476-E283-436E-986C-7FA30FBEFE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB58476-E283-436E-986C-7FA30FBEFE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB58476-E283-436E-986C-7FA30FBEFE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DEAACDF-38B0-4072-96FD-56732D9465A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEAACDF-38B0-4072-96FD-56732D9465A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DEAACDF-38B0-4072-96FD-56732D9465A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEAACDF-38B0-4072-96FD-56732D9465A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

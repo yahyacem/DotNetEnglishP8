@@ -1,0 +1,625 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/Site.css",
+      "PackagePath": "staticwebassets/Content/Site.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/bootstrap-theme.css",
+      "PackagePath": "staticwebassets/Content/bootstrap-theme.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets/Content/bootstrap-theme.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets/Content/bootstrap-theme.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets/Content/bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/bootstrap.css",
+      "PackagePath": "staticwebassets/Content/bootstrap.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/bootstrap.css.map",
+      "PackagePath": "staticwebassets/Content/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Content/bootstrap.min.css",
+      "PackagePath": "staticwebassets/Content/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/bootstrap.js",
+      "PackagePath": "staticwebassets/Scripts/bootstrap.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/bootstrap.min.js",
+      "PackagePath": "staticwebassets/Scripts/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery-3.3.1.intellisense.js",
+      "PackagePath": "staticwebassets/Scripts/jquery-3.3.1.intellisense.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery-3.3.1.js",
+      "PackagePath": "staticwebassets/Scripts/jquery-3.3.1.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets/Scripts/jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery-3.3.1.min.map",
+      "PackagePath": "staticwebassets/Scripts/jquery-3.3.1.min.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery-3.3.1.slim.js",
+      "PackagePath": "staticwebassets/Scripts/jquery-3.3.1.slim.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery-3.3.1.slim.min.js",
+      "PackagePath": "staticwebassets/Scripts/jquery-3.3.1.slim.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery-3.3.1.slim.min.map",
+      "PackagePath": "staticwebassets/Scripts/jquery-3.3.1.slim.min.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery.validate-vsdoc.js",
+      "PackagePath": "staticwebassets/Scripts/jquery.validate-vsdoc.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery.validate.js",
+      "PackagePath": "staticwebassets/Scripts/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/Scripts/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/Scripts/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/Scripts/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/Scripts/modernizr-2.8.3.js",
+      "PackagePath": "staticwebassets/Scripts/modernizr-2.8.3.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.midnight-blue.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.midnight-blue.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.midnight-blue.min.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.midnight-blue.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.min.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.orange-coral.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.orange-coral.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.orange-coral.min.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.orange-coral.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.royal-navy.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.royal-navy.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/evo/evo-calendar.royal-navy.min.css",
+      "PackagePath": "staticwebassets/css/evo/evo-calendar.royal-navy.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/font-awesome.min.css",
+      "PackagePath": "staticwebassets/css/font-awesome.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/jsCalendar.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/jsCalendar.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/jsCalendar.min.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/jsCalendar.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/themes/jsCalendar.clean.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/themes/jsCalendar.clean.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/themes/jsCalendar.clean.min.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/themes/jsCalendar.clean.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/themes/jsCalendar.darkseries.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/themes/jsCalendar.darkseries.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/themes/jsCalendar.darkseries.min.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/themes/jsCalendar.darkseries.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/themes/jsCalendar.micro.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/themes/jsCalendar.micro.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/jsCalendar/themes/jsCalendar.micro.min.css",
+      "PackagePath": "staticwebassets/css/jsCalendar/themes/jsCalendar.micro.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/fonts/glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/bg-banner.jpg",
+      "PackagePath": "staticwebassets/img/bg-banner.jpg"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/doctor1.jpg",
+      "PackagePath": "staticwebassets/img/doctor1.jpg"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/doctor2.jpg",
+      "PackagePath": "staticwebassets/img/doctor2.jpg"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/doctor3.jpg",
+      "PackagePath": "staticwebassets/img/doctor3.jpg"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/doctor4.jpg",
+      "PackagePath": "staticwebassets/img/doctor4.jpg"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/logo.png",
+      "PackagePath": "staticwebassets/img/logo.png"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/logo1.png",
+      "PackagePath": "staticwebassets/img/logo1.png"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/img/thumb.png",
+      "PackagePath": "staticwebassets/img/thumb.png"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/custom.js",
+      "PackagePath": "staticwebassets/js/custom.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/evo/evo-calendar.js",
+      "PackagePath": "staticwebassets/js/evo/evo-calendar.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/evo/evo-calendar.min.js",
+      "PackagePath": "staticwebassets/js/evo/evo-calendar.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jquery.easing.min.js",
+      "PackagePath": "staticwebassets/js/jquery.easing.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jquery.min.js",
+      "PackagePath": "staticwebassets/js/jquery.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/extensions/jsCalendar.datepicker.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/extensions/jsCalendar.datepicker.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/extensions/jsCalendar.datepicker.min.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/extensions/jsCalendar.datepicker.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.be.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.be.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.ca.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.ca.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.de.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.de.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.es.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.es.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.fr.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.fr.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.gr.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.gr.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.hu.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.hu.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.it.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.it.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.ja.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.ja.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.nl.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.nl.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.no.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.no.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.pt.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.pt.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.ru.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.ru.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.sk.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.sk.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.sv.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.sv.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.template.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.template.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.tr.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.tr.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.uk.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.uk.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.lang.zh.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.lang.zh.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/jsCalendar/jsCalendar.min.js",
+      "PackagePath": "staticwebassets/js/jsCalendar/jsCalendar.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.CalifornianHealthMonolithic.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.CalifornianHealthMonolithic.WebApp.props",
+      "PackagePath": "build\\CalifornianHealthMonolithic.WebApp.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.CalifornianHealthMonolithic.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\CalifornianHealthMonolithic.WebApp.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.CalifornianHealthMonolithic.WebApp.props",
+      "PackagePath": "buildTransitive\\CalifornianHealthMonolithic.WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

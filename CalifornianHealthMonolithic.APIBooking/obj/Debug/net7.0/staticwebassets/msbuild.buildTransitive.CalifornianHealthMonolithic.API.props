@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/CalifornianHealthMonolithic.API.props" />
+</Project>

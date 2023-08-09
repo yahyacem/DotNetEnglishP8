@@ -1,0 +1,41 @@
+﻿@using CalifornianHealthMonolithic.WebApp.Models.ViewModels
+@model CalifornianHealthMonolithic.WebApp.Models.ViewModels.ConsultantNamesViewModel
+
+<div class="container padding-y">
+    <section>
+        <label for="consultant">Select Consultant you wish to make an appointment for</label>
+        <div class="form-group">
+            @Html.DropDownListFor(m => m.ConsultantsNames,new SelectList(Model.ConsultantsNames, "Id", "Name"), new { @class = "form-control", @id ="DropConsultants" })
+            @Html.ValidationMessageFor(m => m.ConsultantsNames)
+        </div>
+    </section>
+    <section id="calendarContainer">
+    </section>
+</div>
+<script>
+
+    $(document).ready(function () {
+        const RenderCalendarView = (id) => {
+            // Make an AJAX request to change the selected user
+            $.ajax({
+                url: "/Booking/Calendar/" + id,
+                type: "GET",
+                success: function (data) {
+                    // Update the user information in the partial view
+                    $("#calendarContainer").html(data);
+                },
+                error: function (error) {
+                    console.error(error);
+                }
+            });
+        }
+
+        let selectedId = $('#DropConsultants').val();
+        RenderCalendarView(selectedId);
+
+        $('#DropConsultants').change(function () {
+            var id = $(this).val();  
+            RenderCalendarView(id);
+        });
+    });
+</script>

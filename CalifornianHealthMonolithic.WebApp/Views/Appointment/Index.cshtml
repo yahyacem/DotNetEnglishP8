@@ -1,0 +1,17 @@
+@model CalifornianHealthMonolithic.Shared.Models.ViewModels.AppointmentViewModel
+
+@{
+    ViewBag.Title = "Appointment";
+}
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <h3>Appointment details</h3>
+            <p>Patient: @Model.PatientName</p>
+            <p>Consultant: @Model.ConsultantName</p>
+            <p>Start date: @Model.StartDateTime</p>
+            <p>End date: @Model.EndDateTime</p>
+        </div>
+    </div>
+</section>

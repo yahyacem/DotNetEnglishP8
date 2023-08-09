@@ -1,0 +1,17 @@
+﻿@model CalifornianHealthMonolithic.WebApp.Models.ViewModels.ConsultantCalendarViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewBag.Title = "CreateAppointment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container padding-y">
+    <h3>Are you sure that you want to book this appointment ?</h3>
+
+    <form method="POST" action="/Booking/Appointment/@Model.Id">
+        <ul>
+            <li>@Model.Date</li>
+        </ul>
+        <a asp-controller="Booking" asp-action="ConsultantCalendar">Return</a>
+        <input type="submit" value="Confirm"/>
+    </form>
+</div>

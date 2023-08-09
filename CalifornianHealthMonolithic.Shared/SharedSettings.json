@@ -1,0 +1,11 @@
+{
+    "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Database=DotNetEnglishP8_db;MultipleActiveResultSets=true;User ID=SA;Password=Password.123;TrustServerCertificate=True"
+    },
+    "Jwt": {
+      "SecretKey": "w0N%HCj0K.Ul8Hr",
+      "Issuer": "https://localhost:7024/",
+      "Audience": "https://localhost:7024/"
+    }
+  }
+  
