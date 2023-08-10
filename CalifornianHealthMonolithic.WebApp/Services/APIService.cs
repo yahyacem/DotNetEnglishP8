@@ -3,7 +3,6 @@ using AutoMapper;
 using CalifornianHealthMonolithic.Shared;
 using CalifornianHealthMonolithic.Shared.Models;
 using CalifornianHealthMonolithic.Shared.Models.Entities;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 using CalifornianHealthMonolithic.WebApp.Mappers;
 using CalifornianHealthMonolithic.WebApp.Models;
 using CalifornianHealthMonolithic.WebApp.Models.ViewModels;
@@ -91,7 +90,7 @@ namespace CalifornianHealthMonolithic.WebApp.Services
             }
             return consultantCalendarViewModel;
         }
-        public async Task<AppointmentViewModel> BookAppointment(int id, string token)
+        public async Task<APIServiceResponseModel> BookAppointment(int id, string token)
         {
             AppointmentViewModel? appointmentViewModel = null;
             var _httpClient = _httpClientFactory.CreateClient();
@@ -102,8 +101,12 @@ namespace CalifornianHealthMonolithic.WebApp.Services
                 string apiResponse = await response.Content.ReadAsStringAsync();
                 appointmentViewModel = JsonConvert.DeserializeObject<AppointmentViewModel>(apiResponse);
             }
-            
-            return appointmentViewModel;
+            APIServiceResponseModel requestResponse = new()
+            {
+                Result = appointmentViewModel,
+                Response = response
+            };
+            return requestResponse;
         }
         public async Task<AppointmentViewModel> GetAppointmentViewModelAsync(int id, string token)
         {

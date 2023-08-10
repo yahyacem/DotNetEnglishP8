@@ -2,7 +2,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using CalifornianHealthMonolithic.Shared.Models.Entities;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
+using CalifornianHealthMonolithic.Shared.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 

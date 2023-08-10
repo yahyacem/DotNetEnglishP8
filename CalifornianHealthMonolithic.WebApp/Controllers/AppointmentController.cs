@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNetCore.Mvc;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Text;
@@ -32,10 +31,16 @@ namespace CalifornianHealthMonolithic.WebApp.Controllers
         [Authorize]
         public async Task<IActionResult> Index(int id)
         {
-            // Get the access token value
-            var accessToken = await _authenticationService.GetValidTokenAsync(User);
-            var appointmentViewModel = await _apiService.GetAppointmentViewModelAsync(id, accessToken);
-            return appointmentViewModel != null ? View(model: appointmentViewModel) : Redirect("/NotFound");
+            try
+            {
+                // Get the access token value
+                var accessToken = await _authenticationService.GetValidTokenAsync(User);
+                var appointmentViewModel = await _apiService.GetAppointmentViewModelAsync(id, accessToken);
+                return appointmentViewModel != null ? View(model: appointmentViewModel) : RedirectToAction("Index", "NotFound", new { area = "" });
+            } catch (Exception)
+            {
+                return RedirectToAction("Index", "Maintenance", new { area = "" });
+            }
         }
     }
 }

@@ -2,19 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
             "name": ".NET Core Launch (APIBooking)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/CalifornianHealthMonolithic.APIBooking/bin/Debug/net7.0/CalifornianHealthMonolithic.APIBooking.dll",
             "args": [],
             "cwd": "${workspaceFolder}/CalifornianHealthMonolithic.APIBooking",
             "stopAtEntry": false,
-            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
@@ -28,19 +23,14 @@
             "requireExactSource": false
         },
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
             "name": ".NET Core Launch (APIConsultant)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/CalifornianHealthMonolithic.APIConsultant/bin/Debug/net7.0/CalifornianHealthMonolithic.APIConsultant.dll",
             "args": [],
             "cwd": "${workspaceFolder}/CalifornianHealthMonolithic.APIConsultant",
             "stopAtEntry": false,
-            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
@@ -78,6 +68,12 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Compound",
+            "configurations": [".NET Core Launch (APIBooking)", ".NET Core Launch (APIConsultant)", ".NET Core Launch (WebApp)"]
         }
     ]
 }

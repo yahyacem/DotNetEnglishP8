@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNetCore.Mvc;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Text;
@@ -14,6 +13,7 @@ using CalifornianHealthMonolithic.WebApp.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using IAuthenticationService = CalifornianHealthMonolithic.Shared.IAuthenticationService;
+using System.Net;
 
 namespace CalifornianHealthMonolithic.WebApp.Controllers
 {
@@ -31,27 +31,53 @@ namespace CalifornianHealthMonolithic.WebApp.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> ConsultantCalendar()
         {
-            var consultantNamesViewModel = await _apiService.GetConsultantNames();
-            return View(model: consultantNamesViewModel);
+            try
+            {
+                var consultantNamesViewModel = await _apiService.GetConsultantNames();
+                return View(model: consultantNamesViewModel);
+            } catch (Exception)
+            {
+                return RedirectToAction("Index", "Maintenance", new { area = "" });
+            }
         }
         // GET /Booking/CreateAppointment/{id}
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> CreateAppointment(int id)
         {
-            var accessToken = await _authenticationService.GetValidTokenAsync(User);
-            var consultantNamesViewModel = await _apiService.GetConsultantCalendarViewModel(id, accessToken);
-            return consultantNamesViewModel != null ? View(model: consultantNamesViewModel) : Redirect("NotFound");
+            try
+            {
+                var accessToken = await _authenticationService.GetValidTokenAsync(User);
+                var consultantNamesViewModel = await _apiService.GetConsultantCalendarViewModel(id, accessToken);
+                return consultantNamesViewModel != null ? View(model: consultantNamesViewModel) : RedirectToAction("Index", "NotFound", new { area = "" });
+            } catch (Exception)
+            {
+                return RedirectToAction("Index", "Maintenance", new { area = "" });
+            }
         }
         // GET /Booking/Appointment/{id}
         [HttpPost("/Booking/Appointment/{id}")]
         [Authorize]
         public async Task<IActionResult> ConfirmAppointment(int id)
         {
-            // Get the access token value
-            var accessToken = await _authenticationService.GetValidTokenAsync(User);
-            var appointmentViewModel = await _apiService.BookAppointment(id, accessToken);
-            return Redirect($"/Appointment/{appointmentViewModel.Id}");
+            try
+            {
+                // Get the access token value
+                var accessToken = await _authenticationService.GetValidTokenAsync(User);
+                var response = await _apiService.BookAppointment(id, accessToken);
+                AppointmentViewModel appointmentViewModel = (AppointmentViewModel)response.Result;
+
+                if (response.Response.IsSuccessStatusCode)
+                {
+                    return Redirect($"/Appointment/{appointmentViewModel.Id}");
+                }
+
+                return View("Error", new ErrorViewModel { StatusCode = (int)response.Response.StatusCode, OriginalPath = Request.Path });
+
+            } catch (Exception)
+            {
+                return RedirectToAction("Index", "Maintenance", new { area = "" });
+            }
         }
         // GET /Booking/Calendar/{id}
         [HttpGet]

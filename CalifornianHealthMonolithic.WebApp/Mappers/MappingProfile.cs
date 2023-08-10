@@ -1,6 +1,5 @@
 using AutoMapper;
 using CalifornianHealthMonolithic.Shared.Models.Entities;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 using CalifornianHealthMonolithic.WebApp.Models.ViewModels;
 using static CalifornianHealthMonolithic.WebApp.Areas.Identity.Pages.Account.RegisterModel;
 

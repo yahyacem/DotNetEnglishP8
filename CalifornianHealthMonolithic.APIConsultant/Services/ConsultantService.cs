@@ -1,7 +1,6 @@
 using CalifornianHealthMonolithic.APIConsultant.Repositories;
 using CalifornianHealthMonolithic.Shared.Models.Entities;
 using CalifornianHealthMonolithic.Shared.Models;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 using AutoMapper;
 
 namespace CalifornianHealthMonolithic.APIConsultant.Services

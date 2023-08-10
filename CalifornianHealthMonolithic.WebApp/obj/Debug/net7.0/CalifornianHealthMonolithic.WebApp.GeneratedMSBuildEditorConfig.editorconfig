@@ -76,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/Views/Maintenance/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFpbnRlbmFuY2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/Views/NotFound/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm90Rm91bmQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/Views/Shared/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL05vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/Views/Shared/_Banner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19CYW5uZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.WebApp/Views/Shared/_Layout.cshtml]

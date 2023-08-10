@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNetCore.Mvc;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using CalifornianHealthMonolithic.APIBooking.Services;
 using CalifornianHealthMonolithic.APIBooking.Models;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNetCore.Mvc;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
+using CalifornianHealthMonolithic.Shared.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using CalifornianHealthMonolithic.APIConsultant.Services;
 using Microsoft.AspNetCore.Authorization;

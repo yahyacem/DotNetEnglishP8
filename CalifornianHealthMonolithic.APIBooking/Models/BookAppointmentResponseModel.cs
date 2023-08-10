@@ -1,5 +1,5 @@
 using CalifornianHealthMonolithic.Shared.Models.Entities;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
+using CalifornianHealthMonolithic.Shared.Models;
 
 namespace CalifornianHealthMonolithic.APIBooking.Models
 {

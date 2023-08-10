@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CalifornianHealthMonolithic.Shared.Models.ViewModels
+namespace CalifornianHealthMonolithic.Shared.Models
 {
     public partial class AppointmentViewModel
     {

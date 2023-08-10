@@ -3,6 +3,11 @@
     "tasks": [
         {
             "label": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": ["apiBookingBuild", "apiConsultantsBuild", "webAppBuild"]
+        },
+        {
+            "label": "apiBookingBuild",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -14,7 +19,19 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build",
+            "label": "apiConsultantsBuild",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/CalifornianHealthMonolithic.APIConsultant/CalifornianHealthMonolithic.APIConsultant.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "webAppBuild",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -26,7 +43,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build",
+            "label": "sharedBuild",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -38,26 +55,14 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "publish",
+            "label": "dataBuild",
             "command": "dotnet",
             "type": "process",
             "args": [
-                "publish",
-                "${workspaceFolder}/CalifornianHealthMonolithic.APIBooking/CalifornianHealthMonolithic.APIBooking.csproj",
+                "build",
+                "${workspaceFolder}/CalifornianHealthMonolithic.Data/CalifornianHealthMonolithic.Data.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "watch",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/CalifornianHealthMonolithic.APIBooking/CalifornianHealthMonolithic.APIBooking.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

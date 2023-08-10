@@ -9,18 +9,18 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using CalifornianHealthMonolithic.WebApp.Models.ViewModels;
 using CalifornianHealthMonolithic.Shared.Models;
 using CalifornianHealthMonolithic.WebApp.Services;
-using Microsoft.AspNetCore.Diagnostics;
+using System.Net.Http.Headers;
 
 namespace CalifornianHealthMonolithic.WebApp.Controllers
 {
     
-    public class ErrorController : Controller
+    public class MaintenanceController : Controller
     {
-        [Route("Error/{statusCode}")] 
-        public IActionResult Error(int statusCode) 
-        {     
-            var feature = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
-            return View(new ErrorViewModel { StatusCode = statusCode, OriginalPath = feature?.OriginalPath }); 
-        } 
+        public MaintenanceController(){}
+        public IActionResult Index()
+        {
+            ViewBag.HideBanner = true;
+            return View();
+        }
     }
 }

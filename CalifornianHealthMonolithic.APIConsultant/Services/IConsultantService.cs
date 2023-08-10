@@ -1,6 +1,5 @@
 using CalifornianHealthMonolithic.Shared.Models.Entities;
 using CalifornianHealthMonolithic.Shared.Models;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 
 namespace CalifornianHealthMonolithic.APIConsultant.Services
 {

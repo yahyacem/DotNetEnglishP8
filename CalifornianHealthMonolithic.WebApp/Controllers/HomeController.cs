@@ -1,5 +1,4 @@
 ﻿using CalifornianHealthMonolithic.Shared;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,8 +25,15 @@ namespace CalifornianHealthMonolithic.WebApp.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var consultantListViewModel = await _apiService.GetConsultantListViewModel();
-            return View(model: consultantListViewModel);
+            try
+            {
+                var consultantListViewModel = await _apiService.GetConsultantListViewModel();
+                return View(model: consultantListViewModel);
+            } catch (Exception)
+            {
+                return RedirectToAction("Index", "Maintenance", new { area = "" });
+            }
+            
         }
 
         public ActionResult About()

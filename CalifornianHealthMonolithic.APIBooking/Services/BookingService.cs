@@ -3,15 +3,14 @@ using CalifornianHealthMonolithic.Shared.Models.Entities;
 using CalifornianHealthMonolithic.Shared.Models;
 using CalifornianHealthMonolithic.APIBooking.Models;
 using AutoMapper;
-using CalifornianHealthMonolithic.Shared.Models.ViewModels;
 
 namespace CalifornianHealthMonolithic.APIBooking.Services
 {
     public class BookingService : IBookingService
     {
-        private IBookingRepository _bookingRepository;
-        private IMapper _mapper;
-        private ILogger<BookingService> _logger;
+        private readonly IBookingRepository _bookingRepository;
+        private readonly IMapper _mapper;
+        private readonly ILogger<BookingService> _logger;
         public BookingService(IBookingRepository bookingRepository, IMapper mapper, ILogger<BookingService> logger) 
         {
             this._bookingRepository = bookingRepository;
@@ -20,7 +19,7 @@ namespace CalifornianHealthMonolithic.APIBooking.Services
         }
         public async Task<BookAppointmentResponseModel> BookAppointmentAsync(int patientId, int consultantCalendarId)
         {
-            BookAppointmentResponseModel response = new BookAppointmentResponseModel();
+            BookAppointmentResponseModel response = new();
 
             // Get ConsultantCalendar record to check if it exists and if it's available
             ConsultantCalendar? consultantCalendarToBook = await _bookingRepository.GetConsultantCalendarByIdAsync(consultantCalendarId);
@@ -44,11 +43,11 @@ namespace CalifornianHealthMonolithic.APIBooking.Services
             }
 
             // Create a new appointment
-            Appointment? newAppointment = new Appointment()
+            Appointment? newAppointment = new()
             {
                 Id = null,
                 PatientId = patientId,
-                ConsultantId = consultantCalendarId,
+                ConsultantId = consultantCalendarToBook.ConsultantId,
                 StartDateTime = consultantCalendarToBook.Date,
                 EndDateTime = consultantCalendarToBook.Date.AddHours(1)
             };
@@ -59,15 +58,9 @@ namespace CalifornianHealthMonolithic.APIBooking.Services
                 response.Status = BookAppointmentResponseModel.StatusType.InternalError;
                 return response;
             }
-            // Get the consultant informations
+            // Get the consultant and patient informations
             Consultant consultantEntity = await _bookingRepository.GetConsultantByIdAsync(newAppointment.ConsultantId);
-            _logger.LogError(consultantEntity.ToString());
-            _logger.LogError(consultantEntity.FName.ToString());
-            _logger.LogError(consultantEntity.LName.ToString());
             Patient patientEntity = await _bookingRepository.GetPatientByIdAsync(newAppointment.PatientId);
-            _logger.LogError(patientEntity.ToString());
-            _logger.LogError(patientEntity.FName.ToString());
-            _logger.LogError(patientEntity.LName.ToString());
 
             AppointmentViewModel appointmentViewModel = _mapper.Map<AppointmentViewModel>(newAppointment);
             if (appointmentViewModel == null)
