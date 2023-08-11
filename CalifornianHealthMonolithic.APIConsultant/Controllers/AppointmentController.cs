@@ -18,17 +18,24 @@ namespace CalifornianHealthMonolithic.APIBooking.Controllers
         {
             _consultantService = consultantService;
         }
+        /// <summary>Get Appointment record with the specified Id</summary>
+        /// <param name="id">Id of the appointment to return</param>
+        /// <returns>Returns Appointment record</returns>
         [HttpGet("/Appointment/{id}")]
         [Authorize]
         public async Task<IActionResult> GetAppointmentByIdAsync(int id) 
         {
-            var consultantCalendar = await _consultantService.GetAppointmentViewModelByIdAsync(id);
-            if (consultantCalendar == null)
+            // Get requested appointment model
+            var appointment = await _consultantService.GetAppointmentModelByIdAsync(id);
+
+            // If null, means that it doesn't exist
+            if (appointment == null)
             {
                 return NotFound();
             }
             
-            return Ok(consultantCalendar);
+            // Return Ok response with the requested appointment
+            return Ok(appointment);
         }
     }
 }

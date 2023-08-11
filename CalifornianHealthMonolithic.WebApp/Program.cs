@@ -30,6 +30,7 @@ builder.Services.ConfigureCORS();
 
 // Inject AuthenticationService in order to generate JWT tokens
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<ConfigurationManager>();
 
 
 // Add services to the container.

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CalifornianHealthMonolithic.Shared\CalifornianHealthMonolithic.Shared.csproj" />
+    <ProjectReference Include="..\CalifornianHealthMonolithic.Data\CalifornianHealthMonolithic.Data.csproj" />
+    <ProjectReference Include="..\CalifornianHealthMonolithic.APIBooking\CalifornianHealthMonolithic.APIBooking.csproj" />
+    <ProjectReference Include="..\CalifornianHealthMonolithic.APIConsultant\CalifornianHealthMonolithic.APIConsultant.csproj" />
+    <ProjectReference Include="..\CalifornianHealthMonolithic.WebApp\CalifornianHealthMonolithic.WebApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.7" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.2.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

@@ -10,12 +10,10 @@ namespace CalifornianHealthMonolithic.APIBooking.Services
     {
         private readonly IBookingRepository _bookingRepository;
         private readonly IMapper _mapper;
-        private readonly ILogger<BookingService> _logger;
-        public BookingService(IBookingRepository bookingRepository, IMapper mapper, ILogger<BookingService> logger) 
+        public BookingService(IBookingRepository bookingRepository, IMapper mapper) 
         {
             this._bookingRepository = bookingRepository;
             this._mapper = mapper;
-            this._logger = logger;
         }
         public async Task<BookAppointmentResponseModel> BookAppointmentAsync(int patientId, int consultantCalendarId)
         {

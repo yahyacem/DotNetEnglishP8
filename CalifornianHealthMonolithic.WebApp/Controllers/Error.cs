@@ -18,7 +18,8 @@ namespace CalifornianHealthMonolithic.WebApp.Controllers
     {
         [Route("Error/{statusCode}")] 
         public IActionResult Error(int statusCode) 
-        {     
+        {
+            // Returns error view with status code and path
             var feature = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
             return View(new ErrorViewModel { StatusCode = statusCode, OriginalPath = feature?.OriginalPath }); 
         } 

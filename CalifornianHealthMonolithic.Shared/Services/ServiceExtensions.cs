@@ -18,7 +18,7 @@ namespace CalifornianHealthMonolithic.Shared.Services
         {
             var builder = services.AddIdentity<Patient, AppRole>(options =>
             {
-                // Password settings.
+                // Password settings
                 options.Password.RequireDigit = true;
                 options.Password.RequireLowercase = true;
                 options.Password.RequireNonAlphanumeric = true;
@@ -46,7 +46,6 @@ namespace CalifornianHealthMonolithic.Shared.Services
             // Set up JWT
             services.AddAuthentication(options =>
             {
-                // Password settings.
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
@@ -61,17 +60,9 @@ namespace CalifornianHealthMonolithic.Shared.Services
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     RequireExpirationTime = true,
-                    ValidIssuer = configuration["JwtSettings:Issuer"], // Replace with your issuer
-                    // ValidAudience = configuration["JwtSettings:Audience"], // Replace with your audience
+                    ValidIssuer = configuration["JwtSettings:Issuer"],
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSettings:SecretKey"])) // Replace with your secret key
                 };
-            });
-            services.AddAuthorization(options =>
-                {
-                    options.AddPolicy("AllowAll", policy =>
-                    {
-                        policy.RequireAssertion(context => true); // Always succeeds
-                    });
             });
         }
         public static void ConfigureMapper(this IServiceCollection services)
@@ -80,14 +71,7 @@ namespace CalifornianHealthMonolithic.Shared.Services
         }
         public static void ConfigureHttpClient(this IServiceCollection services)
         {
-            services.AddHttpClient("APIConsultant", client =>
-            {
-                client.BaseAddress = new Uri("http://localhost:5264");
-            });
-            services.AddHttpClient("APIBooking", client =>
-            {
-                client.BaseAddress = new Uri("http://localhost:5102");
-            });
+            services.AddHttpClient();
         }
         public static void ConfigureCORS(this IServiceCollection services)
         {

@@ -17,9 +17,6 @@
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
-            "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
-            },
             "requireExactSource": false
         },
         {
@@ -37,9 +34,6 @@
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
-            },
-            "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
             },
             "requireExactSource": false
         },
@@ -61,6 +55,24 @@
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/CalifornianHealthMonolithic.WebApp/Views"
+            },
+            "requireExactSource": false
+        },
+        {
+            "name": ".NET Core Launch (Tests)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/CalifornianHealthMonolithic.Tests/bin/Debug/net7.0/CalifornianHealthMonolithic.Tests.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/CalifornianHealthMonolithic.Tests",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "requireExactSource": false
         },

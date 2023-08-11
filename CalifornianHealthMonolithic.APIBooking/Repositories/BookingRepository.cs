@@ -8,7 +8,7 @@ namespace CalifornianHealthMonolithic.APIBooking.Repositories
 {
     public class BookingRepository : IBookingRepository
     {
-        private CHDBContext DbContext;
+        private readonly CHDBContext DbContext;
         public BookingRepository(CHDBContext dbContext) 
         {
             this.DbContext = dbContext;

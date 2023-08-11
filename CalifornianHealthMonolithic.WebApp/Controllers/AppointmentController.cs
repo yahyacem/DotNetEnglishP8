@@ -13,6 +13,7 @@ using CalifornianHealthMonolithic.WebApp.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using IAuthenticationService = CalifornianHealthMonolithic.Shared.IAuthenticationService;
+using System.Net.Sockets;
 
 namespace CalifornianHealthMonolithic.WebApp.Controllers
 {
@@ -20,24 +21,25 @@ namespace CalifornianHealthMonolithic.WebApp.Controllers
     {
         private readonly IAPIService _apiService;
         private readonly IAuthenticationService _authenticationService;
-        private readonly ILogger<AppointmentController> _logger;
-        public AppointmentController(IAPIService apiService, IAuthenticationService authenticationService, ILogger<AppointmentController> logger)
+        public AppointmentController(IAPIService apiService, IAuthenticationService authenticationService)
         {
             _apiService = apiService;
             _authenticationService = authenticationService;
-            _logger = logger;
         }
         [HttpGet("/Appointment/{id}")]
         [Authorize]
         public async Task<IActionResult> Index(int id)
         {
+            // If web app tries to reach an api, but is not available, redirect to maintenance page
             try
             {
                 // Get the access token value
                 var accessToken = await _authenticationService.GetValidTokenAsync(User);
+                // Get appointment from api
                 var appointmentViewModel = await _apiService.GetAppointmentViewModelAsync(id, accessToken);
                 return appointmentViewModel != null ? View(model: appointmentViewModel) : RedirectToAction("Index", "NotFound", new { area = "" });
-            } catch (Exception)
+            } catch (Exception ex) when (ex is SocketException ||
+                                         ex is HttpRequestException)
             {
                 return RedirectToAction("Index", "Maintenance", new { area = "" });
             }

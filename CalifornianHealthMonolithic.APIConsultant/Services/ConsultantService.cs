@@ -7,11 +7,11 @@ namespace CalifornianHealthMonolithic.APIConsultant.Services
 {
     public class ConsultantService : IConsultantService
     {
-        private IConsultantRepository _consultantRepository;
-        private IConsultantCalendarRepository _consultantCalendarRepository;
-        private IAppointmentRepository _appointmentRepository;
-        private IPatientRepository _patientRepository;
-        private IMapper _mapper;
+        private readonly IConsultantRepository _consultantRepository;
+        private readonly IConsultantCalendarRepository _consultantCalendarRepository;
+        private readonly IAppointmentRepository _appointmentRepository;
+        private readonly IPatientRepository _patientRepository;
+        private readonly IMapper _mapper;
         public ConsultantService(
             IConsultantRepository consultantRepository, 
             IConsultantCalendarRepository consultantCalendarRepository, 
@@ -41,11 +41,7 @@ namespace CalifornianHealthMonolithic.APIConsultant.Services
         {
             return await _consultantCalendarRepository.GetConsultantCalendarByIdAsync(id);
         }
-        public async Task<List<ConsultantCalendar>> GetConsultantCalendarOfMonthAsync(int id, DateTime date)
-        {
-            return await _consultantCalendarRepository.GetConsultantCalendarOfMonthAsync(id, date);
-        }
-        public async Task<AppointmentViewModel?> GetAppointmentViewModelByIdAsync(int id)
+        public async Task<AppointmentViewModel?> GetAppointmentModelByIdAsync(int id)
         {
             // Get appointment
             Appointment? appointmentEntity = await _appointmentRepository.GetAppointmentByIdAsync(id);

@@ -26,15 +26,14 @@ namespace CalifornianHealthMonolithic.Shared
         }
         public string GenerateAccessToken(Patient user)
         {
+            // Prepare claims for token
             var claims = new List<Claim>()
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
                 new Claim(JwtRegisteredClaimNames.Name, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                // new Claim(JwtRegisteredClaimNames.Aud, _configuration["JwtSettings:Audience"]),
                 new Claim(JwtRegisteredClaimNames.Iss, _configuration["JwtSettings:Issuer"])
             };
-
             var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_tokenSecretKey));
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -43,6 +42,7 @@ namespace CalifornianHealthMonolithic.Shared
                 SigningCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256Signature)
             };
 
+            // Create token
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
@@ -60,16 +60,12 @@ namespace CalifornianHealthMonolithic.Shared
                 ValidateIssuerSigningKey = true,
                 RequireExpirationTime = true,
                 ValidIssuer = _configuration["JwtSettings:Issuer"],
-                // ValidAudience = configuration["JwtSettings:Audience"], // Replace with your audience
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]))
             };
             try
             {
                 // Validate the token and extract its claims
                 var principal = tokenHandler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
-
-                // Optionally, you can access the claims from the principal
-                // var claims = principal.Claims;
 
                 return true; // The token is valid
             }
@@ -78,13 +74,12 @@ namespace CalifornianHealthMonolithic.Shared
                 return false; // Token validation failed
             }
         }
-        public enum APIType {
-            APIBooking,
-            APIConsultant
-        }
         public async Task<string> GetValidTokenAsync(ClaimsPrincipal userPrincipal)
         {
+            // Get current logged user
             var user = await _userManager.GetUserAsync(userPrincipal);
+
+            // Get latest access token issued for user in claims
             var accessTokenClaim = userPrincipal.Claims.LastOrDefault(c => c.Type == "access_token");
 
             // If valid token doesn't exist, create a new one
@@ -107,6 +102,7 @@ namespace CalifornianHealthMonolithic.Shared
                 return accessToken;
             }
 
+            // Returns valid access token
             return accessTokenClaim.Value;
         }
     }

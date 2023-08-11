@@ -26,17 +26,22 @@ namespace CalifornianHealthMonolithic.APIBooking.Controllers
         [Authorize]
         public async Task<IActionResult> BookAppointment(int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            // Get access token from user claims
             var userIdFromToken = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            // If null, return unauthorized
             if (userIdFromToken == null)
             {
                 return Unauthorized();
             }
+
+            // Parse from string to int
             var userId = int.Parse(userIdFromToken);
+
+            // Book appointment
             BookAppointmentResponseModel response = await _bookingService.BookAppointmentAsync(userId, id);
+
+            // Check result of booking and return a response matching the result
             return response.Status switch
             {
                 BookAppointmentResponseModel.StatusType.Success => Ok(response.Appointment),
