@@ -17,7 +17,7 @@ using System.Net.Sockets;
 
 namespace CalifornianHealthMonolithic.WebApp.Controllers
 {
-    public class AppointmentController : Controller
+    public class AppointmentController : BaseController
     {
         private readonly IAPIService _apiService;
         private readonly IAuthenticationService _authenticationService;

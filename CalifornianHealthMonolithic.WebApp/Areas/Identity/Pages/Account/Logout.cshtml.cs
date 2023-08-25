@@ -3,6 +3,7 @@
 #nullable disable
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using CalifornianHealthMonolithic.Shared.Models.Entities;
 using Microsoft.AspNetCore.Authentication;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CalifornianHealthMonolithic.WebApp.Areas.Identity.Pages.Account
 {
+    [ExcludeFromCodeCoverage]
     public class LogoutModel : PageModel
     {
         private readonly SignInManager<Patient> _signInManager;

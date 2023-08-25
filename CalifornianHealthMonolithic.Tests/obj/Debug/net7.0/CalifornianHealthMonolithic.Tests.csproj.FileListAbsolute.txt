@@ -363,3 +363,5 @@
 /Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Tests/bin/Debug/net7.0/CalifornianHealthMonolithic.APIBooking.pdb
 /Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Tests/bin/Debug/net7.0/CalifornianHealthMonolithic.APIConsultant.pdb
 /Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Tests/bin/Debug/net7.0/CalifornianHealthMonolithic.WebApp.pdb
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Tests/bin/Debug/net7.0/Castle.Core.dll
+/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Tests/bin/Debug/net7.0/Moq.dll

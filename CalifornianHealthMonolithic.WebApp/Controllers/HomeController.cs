@@ -15,13 +15,11 @@ using System.Net.Sockets;
 namespace CalifornianHealthMonolithic.WebApp.Controllers
 {
     
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly IHttpClientFactory _httpClientFactory;
         private readonly IAPIService _apiService;
-        public HomeController(IAPIService apiService, IHttpClientFactory httpClientFactory)
+        public HomeController(IAPIService apiService)
         {
-            _httpClientFactory = httpClientFactory;
             _apiService = apiService;
         }
         public async Task<IActionResult> Index()

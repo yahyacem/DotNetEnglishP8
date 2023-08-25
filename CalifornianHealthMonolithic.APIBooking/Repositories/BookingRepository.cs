@@ -13,11 +13,6 @@ namespace CalifornianHealthMonolithic.APIBooking.Repositories
         {
             this.DbContext = dbContext;
         }
-        public async Task<Appointment?> GetAppointmentByIdAsync(int id)
-        {
-            return await DbContext.Appointments
-                .FirstOrDefaultAsync(x => x.Id == id);
-        }
         public async Task<Appointment?> CreateAppointmentAsync(Appointment appointment)
         {
             if (appointment != null)

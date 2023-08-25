@@ -60,6 +60,11 @@ namespace CalifornianHealthMonolithic.APIConsultant.Services
             
             // Instantiate Appointment View Model and map values from Appointment entity object
             AppointmentViewModel appointmentViewModel = _mapper.Map<AppointmentViewModel>(appointmentEntity);
+
+            if (appointmentViewModel == null)
+            {
+                return null;
+            }
             
             // Pass values returned from Consultant and Patient previously retrieved
             appointmentViewModel.ConsultantName = consultant != null ? $"{consultant.FName} {consultant.LName}" : "";

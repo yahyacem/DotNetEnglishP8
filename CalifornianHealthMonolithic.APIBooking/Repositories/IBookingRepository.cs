@@ -5,9 +5,6 @@ namespace CalifornianHealthMonolithic.APIBooking.Repositories
 {
     public interface IBookingRepository
     {
-        /// <returns>Returns an appointments by id from the database</returns>
-        /// <param name="id">Id of the appointment</param>
-        public Task<Appointment?> GetAppointmentByIdAsync(int id);
         /// <summary>Creates an appointment and returns record</summary>
         /// <returns>Returns an appointments created</returns>
         /// <param name="appointment">Appointment to create</param>

@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Diagnostics;
 namespace CalifornianHealthMonolithic.WebApp.Controllers
 {
     
-    public class ErrorController : Controller
+    public class ErrorController : BaseController
     {
         [Route("Error/{statusCode}")] 
         public IActionResult Error(int statusCode) 

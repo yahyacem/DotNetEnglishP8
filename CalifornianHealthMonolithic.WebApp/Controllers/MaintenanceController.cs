@@ -14,7 +14,7 @@ using System.Net.Http.Headers;
 namespace CalifornianHealthMonolithic.WebApp.Controllers
 {
     
-    public class MaintenanceController : Controller
+    public class MaintenanceController : BaseController
     {
         public MaintenanceController(){}
         public IActionResult Index()

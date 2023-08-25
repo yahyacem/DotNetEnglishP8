@@ -139,9 +139,7 @@ namespace CalifornianHealthMonolithic.WebApp.Areas.Identity.Pages.Account
                     // Add the claims to the user's ClaimsIdentity
                     await _signInManager.UserManager.AddClaimsAsync(user, claims);
                     await _signInManager.RefreshSignInAsync(user);
-
-                    var test = await _userManager.GetClaimsAsync(user);
-
+                    
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)

@@ -16,9 +16,12 @@ namespace CalifornianHealthMonolithic.APIBooking.Controllers
     public class BookingController : Controller
     {
         private readonly IBookingService _bookingService;
-        public BookingController(IBookingService bookingService) 
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public BookingController(IBookingService bookingService, IHttpContextAccessor httpContextAccessor) 
         {
             _bookingService = bookingService;
+            _httpContextAccessor = httpContextAccessor;
+
         }
         /// <summary>Books a new appointment by creating an Appointment record and changing the availability of the ConsultantCalendar to false</summary>
         /// <param name="id">Id of the ConsultantCalendar record</param>
@@ -27,7 +30,7 @@ namespace CalifornianHealthMonolithic.APIBooking.Controllers
         public async Task<IActionResult> BookAppointment(int id)
         {
             // Get access token from user claims
-            var userIdFromToken = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var userIdFromToken = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
             // If null, return unauthorized
             if (userIdFromToken == null)

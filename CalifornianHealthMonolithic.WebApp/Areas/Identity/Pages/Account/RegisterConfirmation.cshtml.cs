@@ -3,6 +3,7 @@
 #nullable disable
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -14,6 +15,7 @@ using Microsoft.AspNetCore.WebUtilities;
 
 namespace CalifornianHealthMonolithic.WebApp.Areas.Identity.Pages.Account
 {
+    [ExcludeFromCodeCoverage]
     [AllowAnonymous]
     public class RegisterConfirmationModel : PageModel
     {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X5V/HQKLT+wSgAEXzSQhoJRndEfnjEtPpc1mClX3h/px2biJ5vhietQjUfK415flmW+zr13Qf/VJWyZqEFQ/Dg==",
+  "dgSpecHash": "u+MvAhsjTGjaOdmspsnStuGkJ+AxU+xH7z3QtSTLkjKwwBFmWrw4VmSW12A0ej0LtK4LrYrcnZ6RCpPODLAy2g==",
   "success": true,
   "projectFilePath": "/Users/yahya/Documents/Projects/DotNetEnglishP8/CalifornianHealthMonolithic.Tests/CalifornianHealthMonolithic.Tests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/yahya/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/yahya/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/yahya/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/yahya/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/yahya/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
@@ -182,6 +183,7 @@
     "/Users/yahya/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "/Users/yahya/.nuget/packages/moq/4.20.69/moq.4.20.69.nupkg.sha512",
     "/Users/yahya/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/yahya/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/yahya/.nuget/packages/newtonsoft.json.bson/1.0.1/newtonsoft.json.bson.1.0.1.nupkg.sha512",
@@ -231,6 +233,7 @@
     "/Users/yahya/.nuget/packages/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "/Users/yahya/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "/Users/yahya/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",

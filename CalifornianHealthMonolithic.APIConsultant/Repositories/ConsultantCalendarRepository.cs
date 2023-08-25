@@ -17,24 +17,10 @@ namespace CalifornianHealthMonolithic.APIConsultant.Repositories
             return await DbContext.ConsultantCalendars
                 .Where(x => x.ConsultantId == id && x.Available).ToListAsync();
         }
-        public async Task<List<ConsultantCalendar>> GetConsultantCalendarOfMonthAsync(int id, DateTime date)
-        {
-            return await DbContext.ConsultantCalendars
-                .Where(x => x.ConsultantId == id && x.Available && x.Date.Month == date.Month).ToListAsync();
-        }
         public async Task<ConsultantCalendar?> GetConsultantCalendarByIdAsync(int id)
         {
             return await DbContext.ConsultantCalendars
                 .FirstOrDefaultAsync(x => x.Id == id);
         }
-        // public async Task<bool> AddAppointmentAsync(Appointment model)
-        // {
-        //     if (model == null)
-        //         return false;
-
-        //     await DbContext.Appointments.AddAsync(model);
-        //     await DbContext.SaveChangesAsync();
-        //     return true;
-        // }
     }
 }
