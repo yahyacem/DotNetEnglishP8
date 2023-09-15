@@ -41,7 +41,7 @@ namespace CalifornianHealthMonolithic.APIConsultant.Services
         {
             return await _consultantCalendarRepository.GetConsultantCalendarByIdAsync(id);
         }
-        public async Task<AppointmentViewModel?> GetAppointmentModelByIdAsync(int id)
+        public async Task<AppointmentModel?> GetAppointmentModelByIdAsync(int id)
         {
             // Get appointment
             Appointment? appointmentEntity = await _appointmentRepository.GetAppointmentByIdAsync(id);
@@ -59,7 +59,7 @@ namespace CalifornianHealthMonolithic.APIConsultant.Services
             Patient? patient = await _patientRepository.GetPatientByIdAsync(appointmentEntity.PatientId);
             
             // Instantiate Appointment View Model and map values from Appointment entity object
-            AppointmentViewModel appointmentViewModel = _mapper.Map<AppointmentViewModel>(appointmentEntity);
+            AppointmentModel appointmentViewModel = _mapper.Map<AppointmentModel>(appointmentEntity);
 
             if (appointmentViewModel == null)
             {

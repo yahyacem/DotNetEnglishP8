@@ -6,7 +6,7 @@ namespace CalifornianHealthMonolithic.APIBooking.Models
     public class BookAppointmentResponseModel
     {
         public StatusType Status { get; set; }
-        public AppointmentViewModel? Appointment { get; set; }
+        public AppointmentModel? Appointment { get; set; }
         public enum StatusType
         {
             Success,

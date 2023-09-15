@@ -24,5 +24,10 @@ namespace CalifornianHealthMonolithic.APIBooking.Repositories
         /// <param name="id">Id of the patient to return</param>
         /// <returns>Returns the Patient object with the specified Id</returns>
         public Task<Patient> GetPatientByIdAsync(int id);
+        /// <summary>Set ConsultantCalendar record to not available and create a new appointment</summary>
+        /// <param name="consultantCalendarId"></param>
+        /// <param name="patientId"></param>
+        /// <returns>Returnes the new appointment created. If any error, it will return null.</returns>
+        public Task<Appointment?> BookAppointmentAsync(int consultantCalendarId, int patientId);
     }
 }

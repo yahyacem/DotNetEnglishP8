@@ -111,7 +111,7 @@ namespace CalifornianHealthMonolithic.Tests.Unit.WebApp.Controllers
             APIServiceResponseModel responseModel = new()
             {
                 Response = new HttpResponseMessage(HttpStatusCode.OK),
-                Result = new AppointmentViewModel()
+                Result = new AppointmentModel()
                 {
                     Id = Convert.ToInt32(appointments.First().Id),
                     StartDateTime = appointments.First().StartDateTime,

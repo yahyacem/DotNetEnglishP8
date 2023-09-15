@@ -25,7 +25,7 @@ namespace CalifornianHealthMonolithic.Tests.Unit.WebApp.Controllers
             List<Appointment> appointments = GetSeedAppointments(1, consultantCalendars, patients);
 
     
-            AppointmentViewModel appointmentViewModelToReturn = new()
+            AppointmentModel appointmentModelToReturn = new()
             {
                 Id = Convert.ToInt32(appointments.First().Id),
                 StartDateTime = appointments.First().StartDateTime,
@@ -39,7 +39,7 @@ namespace CalifornianHealthMonolithic.Tests.Unit.WebApp.Controllers
             authenticationService.Setup(x => x.GetValidTokenAsync(It.IsAny<ClaimsPrincipal>())).ReturnsAsync("");
 
             var apiService = new Mock<IAPIService>();
-            apiService.Setup(x => x.GetAppointmentViewModelAsync(It.IsAny<int>(), It.IsAny<string>())).ReturnsAsync(appointmentViewModelToReturn);
+            apiService.Setup(x => x.GetAppointmentViewModelAsync(It.IsAny<int>(), It.IsAny<string>())).ReturnsAsync(appointmentModelToReturn);
 
             // Instantiate controller
             AppointmentController appointmentControllerController = new(apiService.Object, authenticationService.Object);
@@ -51,7 +51,7 @@ namespace CalifornianHealthMonolithic.Tests.Unit.WebApp.Controllers
             
             // Response should be NotFound
             Assert.IsType<ViewResult>(response);
-            Assert.Equal(((ViewResult)response).Model, appointmentViewModelToReturn);
+            Assert.Equal(((ViewResult)response).Model, appointmentModelToReturn);
         }
     }
 }

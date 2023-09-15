@@ -30,6 +30,6 @@ namespace CalifornianHealthMonolithic.WebApp.Services
         ///<returns>Returns details of requested appointment</returns>
         /// <param name="id">Appointment ID</param>
         /// <param name="token">Access token</param>
-        public Task<AppointmentViewModel> GetAppointmentViewModelAsync(int id, string token);
+        public Task<AppointmentModel> GetAppointmentViewModelAsync(int id, string token);
     }
 }

@@ -22,6 +22,6 @@ namespace CalifornianHealthMonolithic.APIConsultant.Services
         /// <summary>Get appointment entry by Id</summary>
         /// <param name="id">Id of Appointment</param>
         /// <returns>Returns AppointmentModel mapped from the Appointment record</returns>
-        public Task<AppointmentViewModel?> GetAppointmentModelByIdAsync(int id);
+        public Task<AppointmentModel?> GetAppointmentModelByIdAsync(int id);
     }
 }

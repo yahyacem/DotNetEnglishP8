@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vsPtuhAAyXZD95Nc2eYHHoVZ/2xv4vDpO9cpU7Td+tA=",
+  "Hash": "QMBIMFmzDreU0eyp6jr9inucTwZiXxBNVGnGuCFMNto=",
   "Source": "CalifornianHealthMonolithic.APIBooking",
   "BasePath": "_content/CalifornianHealthMonolithic.APIBooking",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "CalifornianHealthMonolithic.Data",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

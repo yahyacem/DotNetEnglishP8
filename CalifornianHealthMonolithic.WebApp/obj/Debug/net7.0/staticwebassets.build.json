@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AXH+9k6C9g/WYRjQixRen4AZM0BWQekd5topIyzlenc=",
+  "Hash": "TOau4Ea9l7/IGd5jm6n6gf4GJ1WR38wO/JybVVVksIs=",
   "Source": "CalifornianHealthMonolithic.WebApp",
   "BasePath": "_content/CalifornianHealthMonolithic.WebApp",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "CalifornianHealthMonolithic.Data",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

@@ -8,7 +8,7 @@ namespace CalifornianHealthMonolithic.Shared.Mappers
     {
         public MappingProfiles()
         {
-            CreateMap<Appointment, AppointmentViewModel>();
+            CreateMap<Appointment, AppointmentModel>();
         }
     }
 }

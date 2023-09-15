@@ -154,7 +154,7 @@ namespace CalifornianHealthMonolithic.Tests.Unit.APIBooking.Services
             bookingRepository.Setup(x => x.GetPatientByIdAsync(It.IsAny<int>()))
                              .ReturnsAsync(value: patients.First());
             var mapper = new Mock<IMapper>();
-            mapper.Setup(x => x.Map<AppointmentViewModel?>(It.IsAny<Appointment>()))
+            mapper.Setup(x => x.Map<AppointmentModel?>(It.IsAny<Appointment>()))
                   .Returns(value: null);
             IBookingService bookingService = new BookingService(bookingRepository.Object, mapper.Object);
 

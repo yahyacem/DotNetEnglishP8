@@ -133,26 +133,26 @@ namespace CalifornianHealthMonolithic.WebApp.Services
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             // Call api to get list of ConsultantCalendar
-            AppointmentViewModel? appointmentViewModel = null;
+            AppointmentModel? appointmentModel = null;
             var response = await _httpClient.PostAsync($"{_APIBookingURL}/Booking/{id}", null);
             if (response.IsSuccessStatusCode)
             {
                 // Deserialize result
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                appointmentViewModel = JsonConvert.DeserializeObject<AppointmentViewModel>(apiResponse);
+                appointmentModel = JsonConvert.DeserializeObject<AppointmentModel>(apiResponse);
             }
 
             // Prepare response model
             APIServiceResponseModel requestResponse = new()
             {
-                Result = appointmentViewModel,
+                Result = appointmentModel,
                 Response = response
             };
 
             // Returns result
             return requestResponse;
         }
-        public async Task<AppointmentViewModel> GetAppointmentViewModelAsync(int id, string token)
+        public async Task<AppointmentModel> GetAppointmentViewModelAsync(int id, string token)
         {
             // Create new HTTP client
             var _httpClient = _httpClientFactory.CreateClient("APIConsultant");
@@ -161,17 +161,17 @@ namespace CalifornianHealthMonolithic.WebApp.Services
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             // Call api to get list of ConsultantCalendar
-            AppointmentViewModel? appointmentViewModel = null;
+            AppointmentModel? appointmentModel = null;
             var response = await _httpClient.GetAsync($"{_APIConsultantURL}/Appointment/{id}");
             if (response.IsSuccessStatusCode)
             {
                 // Deserialize result
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                appointmentViewModel = JsonConvert.DeserializeObject<AppointmentViewModel>(apiResponse);
+                appointmentModel = JsonConvert.DeserializeObject<AppointmentModel>(apiResponse);
             }
             
             // Returns result
-            return appointmentViewModel;
+            return appointmentModel;
         }
     }
 }

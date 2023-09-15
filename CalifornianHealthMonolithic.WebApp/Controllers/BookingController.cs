@@ -74,7 +74,7 @@ namespace CalifornianHealthMonolithic.WebApp.Controllers
                 // Get the access token
                 var accessToken = await _authenticationService.GetValidTokenAsync(User);
                 var response = await _apiService.BookAppointment(id, accessToken);
-                AppointmentViewModel appointmentViewModel = (AppointmentViewModel)response.Result;
+                AppointmentModel appointmentViewModel = (AppointmentModel)response.Result;
 
                 if (!response.Response.IsSuccessStatusCode)
                 {

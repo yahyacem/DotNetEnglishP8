@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CalifornianHealthMonolithic.Shared.Models
 {
-    public partial class AppointmentViewModel
+    public partial class AppointmentModel
     {
         public int Id { get; set; }
         public DateTime StartDateTime { get; set; }

@@ -13,10 +13,9 @@
     </section>
 </div>
 <script>
-
     $(document).ready(function () {
         const RenderCalendarView = (id) => {
-            // Make an AJAX request to change the selected user
+            // Make an AJAX request to change the selected calendar
             $.ajax({
                 url: "/Booking/Calendar/" + id,
                 type: "GET",
@@ -29,7 +28,6 @@
                 }
             });
         }
-
         let selectedId = $('#DropConsultants').val();
         RenderCalendarView(selectedId);
 
